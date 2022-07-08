@@ -1,0 +1,31 @@
+a:6:{s:1:"k";s:13:"feedback_form";s:1:"d";s:852:"
+        <div class="container">
+
+        <div align="center">
+
+        <div class="shadow p-4 mb-4 bg-light" style="width:300px;">
+
+            <form action="submit-feedback.php" method="POST">
+
+                <input class="form-control" type="email" name="email" placeholder="Email" 
+                required style="height:40px;">
+
+                <br>
+
+                <textarea class="form-control" name="feedback" rows="6" 
+                placeholder="Tell us about your experience as a user"></textarea>
+
+                <br>
+
+                <button type="submit" class="btn btn-md text-light" style="background-color:#1d007e;">
+                  Submit <i class="fa fa-comment"></i>
+                </button>
+
+            </form>
+
+        </div>
+        <!-- login container -->
+
+        </div>
+        
+        ";s:1:"g";a:0:{}s:1:"e";O:8:"DateTime":3:{s:4:"date";s:26:"2022-05-17 18:38:26.627710";s:13:"timezone_type";i:3;s:8:"timezone";s:13:"Europe/Berlin";}s:1:"m";N;s:1:"c";N;}

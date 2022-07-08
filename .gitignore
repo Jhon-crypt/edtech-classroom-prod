@@ -1,0 +1,10 @@
+desktop.ini
+composer.json
+composer.lock
+vendor
+vendorEnv
+vendorPhpfastcache
+resources/avatars/
+resources/class-notes/
+resources/course-outlines/
+resources/libraries/

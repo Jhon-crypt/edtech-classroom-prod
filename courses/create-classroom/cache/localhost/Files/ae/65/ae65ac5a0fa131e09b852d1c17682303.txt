@@ -1,0 +1,151 @@
+a:6:{s:1:"k";s:21:"create_classroom_form";s:1:"d";s:5711:"
+        
+        <div style="border-radius:0% 0% 45% 44% / 0% 10% 44% 46%;background-color:#1d007e;" 
+         align="center">
+ 
+             <br>
+ 
+             <h1 class="text-light" style="font-weight:bolder;font-family:monospace;">
+    
+                Create Classroom <i class="fa fa-plus-circle"></i>
+    
+             </h1>
+ 
+             <br>
+ 
+         </div>
+ 
+         <br>
+ 
+         <div align="center">
+ 
+             <div class="card shadow p-4 mb-4 bg-light" style="width:200px;">
+ 
+                 <a class="text-white" href="../courses-dashboard/index.php?id=bc190a8ea649b05e50c942fd8b26f684" style="text-decoration:none;">
+ 
+                     <button class="btn btn-md text-white" style="background-color:#1d007e;">
+ 
+                     <i class="fa fa-arrow-left"></i> Back to course
+ 
+                     </button>
+ 
+                 </a>
+ 
+             </div>
+
+             <br>
+
+             <div class="container">
+
+                <div align="center">
+
+                    <form action="create-classroom-controller.php" method="POST" enctype="multipart/form-data">
+           
+                        <ul class="nav nav-tabs justify-content-center">
+
+                           <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#form1">Step 
+                                   <span class="badge" style="background-color:#1d007e;">1</span>
+                                </a>
+                           </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#form2">Step 
+                                    <span class="badge" style="background-color:#1d007e;">2</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#form3"> Step
+                                   <span class="badge" style="background-color:#1d007e;">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- input tabs -->
+
+                        <div class="tab-content">
+
+                            <div class="tab-pane container active" id="form1" align="center">
+
+                                <div class="shadow p-4 mb-4 bg-light" style="width:300px;">
+
+                                    <input class="form-control" type="text" name="topic" placeholder="Class topic" required
+                                    style="height:40px;">
+
+                                    <br>
+
+                                    <textarea class="form-control" name="about" rows="2" placeholder="About class"></textarea>
+
+                                    <br>
+
+                                    <button class="btn btn-md text-light" style="background-color:#1d007e;">
+                                       Click on step 2
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <!-- form 1 -->
+
+                            <div class="tab-pane container" id="form2" align="center">
+
+                                <div class="shadow p-4 mb-4 bg-light" style="width:300px;">
+
+                                    <br>
+
+                                    <label align="center" for="avatar" class="text-secondary"><b>Upload Instructional Material</b>
+                                    </label><br>
+                                    <input id="avatar" type="file" name="material" accept="application/pdf" style="width:170px;">
+
+                                    <br><br>
+
+                                    <button class="btn btn-md text-light" style="background-color:#1d007e;">
+                                       Click on step 3
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <!-- form 2 -->
+
+                            <div class="tab-pane container" id="form3" align="center">
+
+                                <div class="shadow p-4 mb-4 bg-light" style="width:300px;">
+
+                                    <textarea class="form-control" name="assignment" rows="2" placeholder="Assignment question"></textarea>
+
+                                    <br>
+
+                                    <label align="center" for="avatar" class="text-secondary"><b>Due date</b>
+                                    </label>
+                                    <input class="form-control" type="date" name="dueDate" placeholder="Class topic" required
+                                    style="height:40px;">
+
+                                    <input type="hidden" name="courseEncryptedId" value=bc190a8ea649b05e50c942fd8b26f684>
+
+                                    <br>
+
+                                    <button type="submit" class="btn btn-md text-light" style="background-color:#1d007e;">
+                                       Create <i class="fa fa-plus-circle"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <!-- form 3 -->
+
+
+                        </div>
+                        <! tab content -->
+
+                    </form>
+
+                </div>
+
+             </div>
+             <!-- container -->
+ 
+         </div>
+         <!-- create container-->
+
+        ";s:1:"g";a:0:{}s:1:"e";O:8:"DateTime":3:{s:4:"date";s:26:"2022-04-23 05:54:21.412816";s:13:"timezone_type";i:3;s:8:"timezone";s:13:"Europe/Berlin";}s:1:"m";N;s:1:"c";N;}
