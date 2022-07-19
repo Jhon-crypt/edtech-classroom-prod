@@ -68,8 +68,6 @@ class createClassroomController{
 
           $create_classroom->classAttendaceTable();
 
-          $create_classroom->classChatTable();
-
           $create_classroom->classAssignmentTable();
 
           $create_classroom->classTestTable();

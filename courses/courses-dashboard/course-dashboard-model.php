@@ -513,7 +513,7 @@ class courseDashboard{
 
             $this->student_enrolled_total_status = FALSE;
 
-            echo "No enrolled students";    
+            //echo "No enrolled students";    
 
         }
 
@@ -611,7 +611,7 @@ class courseDashboard{
 
         }else{
 
-           echo "<h1>No enrolled students</h1>";
+           //echo "<h1>No enrolled students</h1>";
 
         }
 

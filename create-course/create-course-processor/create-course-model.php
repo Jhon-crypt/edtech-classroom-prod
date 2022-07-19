@@ -229,12 +229,12 @@ class createCourse{
 
         if($conn9->query($course_table_query)){
 
-            //echo "course table created";
+            echo "course table created";
 
         }else{
 
-           //echo "Could not create the course enrolled table";
-           //echo $conn9->error;
+           echo "Could not create the course enrolled table";
+           echo $conn9->error;
 
         }
 
@@ -344,6 +344,7 @@ class createCourse{
 
 
 }
+
 
 
 ?>

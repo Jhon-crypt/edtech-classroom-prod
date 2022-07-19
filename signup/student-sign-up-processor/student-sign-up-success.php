@@ -167,9 +167,9 @@ use Phpfastcache\Config\ConfigurationOption;
 
         }else{
 
-           //header("location:sign-up-error.php");
+           header("location:sign-up-error.php");
 
-           echo "Could not sign u up";
+           //echo "Could not sign u up";
 
         }
 

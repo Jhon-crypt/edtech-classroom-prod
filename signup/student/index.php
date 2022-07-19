@@ -174,7 +174,7 @@ class signup{
                                 <br>
 
                                 <input class="form-control" type="password" name="password" placeholder="Password" 
-                                required style="height:40px;">
+                                required style="height:40px;" maxlength="8" minlength="8">
 
                                 <br>
 

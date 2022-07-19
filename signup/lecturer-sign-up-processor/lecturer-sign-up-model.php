@@ -240,12 +240,6 @@ class lecturerSignUp{
     //insert the data into the lecturer database
     public function insertLecturerIntoDb(){
 
-       //require the env library
-       require('../../vendorEnv/autoload.php');
-
-       $user_db_conn_env = Dotenv\Dotenv::createImmutable(__DIR__, '../../env/db-conn-var.env');
-       $user_db_conn_env->load();
-
        // user db connection
        include('../../resources/database/users-db-connection.php');
 
@@ -258,43 +252,17 @@ class lecturerSignUp{
 
         if($conn1->query($insert_into_lecturer_db_query)){
 
-          //echo "Data Inserted Into The Database"
+            $this->sign_up_status = "true";
 
           
         }else{
 
-          //echo " Could not insert Data Into The Database";
-          //echo $conn1->error;
+            $this->sign_up_status = "false";
 
 
         }
 
-    }
-
-    //update the lecturer sign up set up table
-    public function updateLecturerSetUpTable(){
-
-       //require the env library
-       require('../../vendorEnv/autoload.php');
-
-       $user_db_conn_env = Dotenv\Dotenv::createImmutable(__DIR__, '../../env/db-conn-var.env');
-       $user_db_conn_env->load();
-
-       // admin set up db connection
-       include('../../resources/database/admin-setup-db-connection.php');
-
-       $update_lecturer_signup_setup_query = "UPDATE lecturer_setup SET status='active' 
-       WHERE sign_up_code = '$this->lecturer_signup_code'";
-
-        if($conn5->query($update_lecturer_signup_setup_query)){
-
-            $this->sign_up_status = TRUE;
-
-        }else{
-
-            $this->sign_up_status = FALSE;
-
-        }
+        mysqli_close($conn1);
 
     }
 

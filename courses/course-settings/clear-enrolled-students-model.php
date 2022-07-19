@@ -75,6 +75,7 @@ class clearCourseEnrolledStudents{
 
         }else{
 
+            echo "There are no students";
 
         }
 

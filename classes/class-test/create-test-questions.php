@@ -87,7 +87,7 @@ class createTestQuestion{
         $data = htmlspecialchars($data);
         $data = stripslashes($data);
         $data = strip_tags($data);
-        //$data = $connection->real_escape_string($data);
+        $data = $connection->real_escape_string($data);
 
         return $data; 
 

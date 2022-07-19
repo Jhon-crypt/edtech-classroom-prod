@@ -13,10 +13,10 @@
 */
 
 //defining the connection varaibles
-$hostname = "localhost";
-$username = "john";
-$password = "root";
-$database = "edtech_classroom_student_assignment";
+$hostname = "sql102.epizy.com";
+$username = "epiz_31748541";
+$password = "6sBY5RSduDKek";
+$database = "epiz_31748541_student_assignment";
 
 $conn4 = new mysqli($hostname,$username,$password,$database);
 

@@ -111,13 +111,6 @@ class deleteClass{
 
     }
 
-    //delete the class instructional materials
-    public function deleteClassPdf(){
-
-        unlink('../../resources/course-materials/'.$this->class_material);
-
-    }
-
     public function deleteClassNote(){
 
         unlink($this->class_note);
@@ -151,35 +144,6 @@ class deleteClass{
             }
 
             mysqli_close($conn11);
-
-        }
-
-    }
-
-    public function deleteClassChatTable(){
-
-        if($this->delete_class_status == TRUE){
-
-            //require the env library
-            require('../../vendorEnv/autoload.php');
-
-            $user_db_conn_env = Dotenv\Dotenv::createImmutable(__DIR__, '../../env/db-conn-var.env');
-            $user_db_conn_env->load();
-
-            // course db connection
-            include('../../resources/database/courses-classes-chat-db-connection.php');
-
-            $delete_class_chat_table_query = "DROP TABLE classroom_chat_of_class_".$this->class_id."";
-
-            if($conn12->query($delete_class_chat_table_query)){
-
-
-
-            }else{
-
-
-
-            }
 
         }
 

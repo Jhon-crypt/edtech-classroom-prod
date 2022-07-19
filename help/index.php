@@ -75,7 +75,7 @@ class feedback{
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <button type="button" class="btn btn-md btn-lg px-4 me-md-2 text-light" style="background-color:#1d007e;">
-                            <a class="nav-link text-light" href="https://twitter.com/EdtecClassroom">
+                            <a class="nav-link text-light" href="https://twitter.com/theEdtechClass">
                                 Twitter <i class="fa fa-twitter"></i>
                             </a>
                         </button>

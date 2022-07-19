@@ -28,13 +28,9 @@ class deleteClassController{
 
             $delete_class->reorderClassDbTable();
 
-            $delete_class->deleteClassPdf();
-
             $delete_class->deleteClassNote();
 
             $delete_class->dropClassAttendanceTable();
-
-            $delete_class->deleteClassChatTable();
 
             $delete_class->deleteClassAssignmentTable();
 

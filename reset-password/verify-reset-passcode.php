@@ -135,9 +135,11 @@ class verifyPasscode{
             $passcode_row = $this->cached_passcode_row->fetch_assoc();
 
             $encrypted_user_id = $passcode_row['encrypted_user_id'];
+
+            $user_type = base64_encode($passcode_row['user_type']);
             
             //redirect the user ro the reset passsword form
-            header("location:reset-password.php?verified=true&&encrypted_user_id=$encrypted_user_id");
+            header("location:reset-password-form.php?verified=true&&encrypted_user_id=$encrypted_user_id&&user_type=$user_type");
 
         }
 

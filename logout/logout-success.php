@@ -42,7 +42,7 @@ class logoutSuccess{
     //define the logout success page
     public function logoutSuccessPage(){
 
-       $this->logout_success_page = '
+       echo $this->logout_success_page = '
 
          <br><br><br><br>
          
@@ -161,7 +161,7 @@ if(isset($_SESSION['lecturer_session']) or isset($_SESSION['student_session'])){
 
     $logout_success_controller->logoutSuccessPage();
 
-    $logout_success_controller->cacheSuccesPage();
+    //$logout_success_controller->cacheSuccesPage();
 
 }
 

@@ -68,7 +68,6 @@ class resetPasswordForm{
     public function subHeading(){
 
         $this->sub_heading = '
-        
         <br><br>
          
          <div class="intro" style="border-radius:10% 10% 45% 44% / 10% 10% 44% 46%;background-color:#1d007e;" 
@@ -122,7 +121,7 @@ class resetPasswordForm{
     }
 
     //display the reset password form
-    public function resetPasswordForm(){
+    public function resetPasswordFor(){
 
         $this->password_form = '
         
@@ -134,8 +133,8 @@ class resetPasswordForm{
 
                     <form action="reset-password.php" method="POST">
 
-                        <input class="form-control" type="text" name="newPassword" placeholder="Enter your new password" 
-                        required style="height:40px;">
+                        <input class="form-control" type="password" name="newPassword" placeholder="Enter your new password" 
+                        required style="height:40px;" maxlength="8" minlength="8">
 
                         <input type="hidden" name="encryptedId" value='.$this->user_encrypted_id.'>
 
@@ -203,7 +202,7 @@ if(isset($_GET['encrypted_user_id'])){
 
     $reset_password_form->cacheSubheading();
 
-    $reset_password_form->resetPasswordForm();
+    $reset_password_form->resetPasswordFor();
 
     $reset_password_form->cacheResetPasswordForm();
 

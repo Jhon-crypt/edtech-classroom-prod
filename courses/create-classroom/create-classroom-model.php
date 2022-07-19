@@ -196,44 +196,6 @@ class createClassroom{
 
     }
 
-    public function classChatTable(){
-
-        //require the env library
-        require('../../vendorEnv/autoload.php');
-
-        $user_db_conn_env = Dotenv\Dotenv::createImmutable(__DIR__, '../../env/db-conn-var.env');
-        $user_db_conn_env->load();
-
-        // course db connection
-        include('../../resources/database/courses-classes-chat-db-connection.php');
-
-        $class_chat_table_query = "CREATE TABLE classroom_chat_of_class_".$this->class_encrypted_id."
-        (
-         id int NOT NULL AUTO_INCREMENT,
-         fullname text,
-         username text,
-         avatar text,
-         encrypted_id text,
-         message text,
-         date text,
-         time text,
-         status text,
-         PRIMARY KEY(id)
-        )";
-
-        if($conn12->query($class_chat_table_query)){
-
-            //echo "Class chat is created";
-
-        }else{
-
-            //echo "Could not create class chat table";
-
-        }
-
-        mysqli_close($conn12);
-
-    }
 
     public function classAssignmentTable(){
 

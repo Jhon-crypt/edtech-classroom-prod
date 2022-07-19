@@ -53,6 +53,8 @@ class resetPassword{
 
         $this->user_type = $_POST['userType'];
 
+        echo "working";
+
     }
     
     //sanitize the new password
@@ -72,6 +74,9 @@ class resetPassword{
     public function encryptUserPassword(){
 
         $this->encrypted_password = md5($this->sanitized_new_password);
+
+        echo "working";
+
 
     }
 
@@ -94,6 +99,9 @@ class resetPassword{
 
             mysqli_close($conn1);
 
+            echo "working";
+
+
         }
 
     }
@@ -112,9 +120,16 @@ class resetPassword{
 
                 header("location:reset-password-success.php?resetStatus=true");
 
+            }else{
+
+                echo $conn1->error;
+
             }
 
             mysqli_close($conn1);
+
+            echo "working";
+
  
         }
 

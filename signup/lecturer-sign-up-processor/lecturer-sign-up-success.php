@@ -72,12 +72,12 @@ class lecturerSuccessPage{
     //display the success page
     public function displaySuccessPage(){
 
-        if($this->signup_status == TRUE){
+        if($this->signup_status == "true"){
 
             include('../header/header.php');
 
             $this->success_page = '
-            
+             
             <br>
 
             <div class="intro" style="border-radius:10% 10% 45% 44% / 10% 10% 44% 46%;background-color:#1d007e;" 

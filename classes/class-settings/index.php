@@ -105,7 +105,7 @@ class classSettings{
     public function cacheClassQuery(){
 
         CacheManager::setDefaultConfig(new ConfigurationOption([
-            'path' => '/cache/', // or in windows "C:/tmp/"
+            'path' => '', // or in windows "C:/tmp/"
         ]));
         
         $InstanceCache = CacheManager::getInstance('files');

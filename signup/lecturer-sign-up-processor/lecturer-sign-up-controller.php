@@ -88,8 +88,6 @@ class lecturerSignupController{
             $lecturer_sign_up->processingLecturerAvatar();
 
             $lecturer_sign_up->insertLecturerIntoDb();
-
-            $lecturer_sign_up->updateLecturerSetUpTable();
             
             mysqli_close($conn1);
 
