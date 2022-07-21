@@ -133,7 +133,7 @@ class signup{
                                   <br>
   
                                   <button class="btn btn-md text-light" style="background-color:#1d007e;">
-                                    Click on step 2
+                                    Click on step 2 above
                                   </button>
   
                               </div>
@@ -151,7 +151,7 @@ class signup{
                                   <br>
   
                                   <button class="btn btn-md text-light" style="background-color:#1d007e;">
-                                    Click on step 3
+                                    Click on step 3 above
                                   </button>
   
                                 </div>
