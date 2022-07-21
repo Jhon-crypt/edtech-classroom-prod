@@ -77,7 +77,7 @@ class coursesAnalytics{
                 if($fetch_courses->status == "true"){
 
                     foreach($fetch_courses->courses_rows as $courses_row){
-
+ 
                         $course_code = $courses_row['course_code'];
                         
                         $course_title = $courses_row['course_title'];
@@ -113,8 +113,13 @@ class coursesAnalytics{
                                 </p>
 
                                 <button class="btn btn-outline-dark">
+
+                                    <a class="text-dark" href="../courses/courses-dashboard/index.php?id='.$course_encrypted_id.'" 
+                                    style="text-decoration:none;" target="_blank">
                           
-                                    view course <i class="fa fa-external-link"></i>
+                                        view course <i class="fa fa-external-link"></i>
+
+                                    </a>
 
                                 </button>
 
